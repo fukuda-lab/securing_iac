@@ -9,6 +9,7 @@ This repository contains the evaluation dataset for our study on detecting code 
 - **Run it:**
 
 ```bash
+cd dataset
 python3 dataset/dataset_creation.py
 ```
 
