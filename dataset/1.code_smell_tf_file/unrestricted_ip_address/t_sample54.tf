@@ -1,0 +1,38 @@
+resource "aws_security_group" "bat2" {
+  provider = aws.bat
+
+  vpc_id = aws_vpc.bat2.id
+  # SSH access is controlled at NACL
+  ingress {
+    from_port = 22
+    to_port = 22
+    protocol = "tcp"
+    cidr_blocks = [
+      "0.0.0.0/0"]
+    description = "SSH Access"
+  }
+  ingress {
+    from_port = 8
+    to_port = 0
+    protocol = "icmp"
+    cidr_blocks = [
+      "0.0.0.0/0"]
+    description = "ICMP Access"
+  }
+  ingress {
+    from_port = 33434
+    to_port = 33534
+    protocol = "udp"
+    cidr_blocks = [
+      "0.0.0.0/0"]
+    description = "Traceroute Access"
+  }
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = [
+      "0.0.0.0/0"]
+    description = "Allow all"
+  }
+}

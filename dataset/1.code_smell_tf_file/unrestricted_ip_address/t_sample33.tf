@@ -1,0 +1,15 @@
+resource "aws_security_group" "master" {
+  description = "Security group for master node"
+  vpc_id = "${data.aws_vpc.main.id}"
+  revoke_rules_on_delete = true
+  ingress {
+    from_port = 54321
+    to_port = 54321
+    protocol = "tcp"
+    cidr_blocks = [
+      "0.0.0.0/0"]
+  }
+
+  depends_on = [
+    "data.aws_subnet.main"]
+}
