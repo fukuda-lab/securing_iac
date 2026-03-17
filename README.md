@@ -1,23 +1,36 @@
-# Securing IaC: Detecting Terraform Security Smells with fine-tuned LLMs
-This repository contains the evaluation dataset for our study on detecting code smells in Terraform Infrastructure as Code (IaC) using Large Language Models.
-Paper title: "Securing IaC: Detecting Terraform Security Smells with fine-tuned LLMs"
+# Securing IaC Datasets
 
-## Dataset
+This repository contains two datasets used for research on securing Infrastructure as Code (IaC), specifically targeting Terraform code smells.
 
-- **Folder:** [dataset](dataset) — contains Terraform sample folders and the dataset script.
-- **Script:** [dataset/dataset_creation.py](dataset/dataset_creation.py) — scans Terraform files and generates a JSON Lines dataset for LLM training.
-- **What it does:** The script scans `dataset/1.code_smell_tf_file` for `.tf` files. Files prefixed with `f_` are treated as negative examples (no smell) and files prefixed with `t_` are treated as positive examples (smell present). The smell label is inferred from the parent subfolder name (for `t_` files).
-- **Run it:**
+## 1. COMPSAC 2025 Dataset (`compsac25/`)
 
-```bash
-cd dataset
-python3 dataset/dataset_creation.py
-```
+This dataset was developed for a conference paper at COMPSAC 2025. It consists of a synthetic collection of Terraform files categorized by various code smells.
 
-- **Output:** [dataset/dataset.jsonl](dataset/dataset.jsonl) — a newline-delimited JSON file where each line is an object with the keys `instruction`, `input` (the Terraform source), and `output` (a JSON string with the expected `issues.code_smell_type`).
-- **Notes:**
-	- The script currently uses the relative path `./1.code_smell_tf_file` inside the `dataset` directory. Edit the `folder_path` variable in the script if you need to point to a different samples directory.
-	- The `instruction` field in each record contains guidance and requires the model to respond with a pure JSON object (no extra text).
+**Location:** `compsac25/synthetic_dataset/`
 
-# License
-MIT
+**Categories included:**
+- `admin_by_default`
+- `complex_expression`
+- `deprecated_statement_usage`
+- `empty_password`
+- `hard-coded_secret`
+- `incomplete_conditional`
+- `incomplete_tasks`
+- `insufficient_key_size`
+- `invalid_port_ranges`
+- `invalid_property_value`
+- `law_of_demeter`
+- `suspicious_comment`
+- `unrestricted_ip_address`
+- `weak_crypto__algo_`
+
+## 2. COMPSAC Special Issue 2026 Dataset (`compsac_special_issue26/`)
+
+This dataset is an expanded version developed for a journal paper (COMPSAC Special Issue 2026). It includes both raw Terraform files and a structured JSONL file for machine learning tasks.
+
+**Location:** `compsac_special_issue26/dataset/`
+
+**Contents:**
+- `1.code_smell_tf_file/`: Raw `.tf` samples organized by type (`admin_by_default`, `empty_password`, `hard_coded_secret`, `insufficient_key_size`, `suspicious_comment`, `unrestricted_ip_address`, `weak_crypto__algo_`).
+- `dataset.jsonl`: A structured dataset containing 1,382 entries with instructions, Terraform code snippets, and ground truth labels for code smell detection.
+- `dataset_creation.py`: The script used to generate the dataset.
