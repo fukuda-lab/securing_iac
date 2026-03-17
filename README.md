@@ -34,3 +34,6 @@ This dataset is an expanded version developed for a journal paper (COMPSAC Speci
 - `1.code_smell_tf_file/`: Raw `.tf` samples organized by type (`admin_by_default`, `empty_password`, `hard_coded_secret`, `insufficient_key_size`, `suspicious_comment`, `unrestricted_ip_address`, `weak_crypto__algo_`).
 - `dataset.jsonl`: A structured dataset containing 1,382 entries with instructions, Terraform code snippets, and ground truth labels for code smell detection.
 - `dataset_creation.py`: The script used to generate the dataset.
+
+# License
+MIT
