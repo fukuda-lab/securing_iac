@@ -4,7 +4,7 @@ This repository contains two datasets used for research on securing Infrastructu
 
 ## 1. COMPSAC 2025 Dataset ([compsac25/](compsac25/))
 
-This dataset was developed for a conference paper at COMPSAC 2025. It consists of a synthetic collection of Terraform files categorized by various code smells.
+This dataset was developed for paper [Harnessing the Power of LLMs for Code Smell Detection in Terraform Infrastructure as Code](https://doi.org/10.1109/COMPSAC65507.2025.00075) at IEEE COMPSAC 2025. It consists of a synthetic collection of Terraform files categorized by various code smells.
 
 **Location:**
 [compsac25/synthetic_dataset/](compsac25/synthetic_dataset/)
@@ -27,7 +27,7 @@ This dataset was developed for a conference paper at COMPSAC 2025. It consists o
 
 ## 2. COMPSAC Special Issue 2026 Dataset ([compsac_special_issue26/](compsac_special_issue26/))
 
-This dataset is an expanded version developed for a journal paper (COMPSAC Special Issue 2026). It includes both raw Terraform files and a structured JSONL file for machine learning tasks.
+This dataset is an expanded version developed for a journal paper (IPSJ COMPSAC Special Issue 2026). It includes both raw Terraform files and a structured JSONL file for machine learning tasks.
 
 **Location:** 
 [compsac_special_issue26/dataset/](compsac_special_issue26/dataset/)
