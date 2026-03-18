@@ -20,4 +20,4 @@ python3 dataset/dataset_creation.py
 	- The `instruction` field in each record contains guidance and requires the model to respond with a pure JSON object (no extra text).
 
 # License
-MIT
+, see [LICENSE](../LICENSE).

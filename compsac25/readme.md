@@ -44,4 +44,4 @@ If you use this dataset or our methodology, please cite our COMPSAC 2025 paper:
 DOI: 10.1109/COMPSAC65507.2025.00075
 
 # License
-MIT
+MIT License, see [LICENSE](LICENSE).

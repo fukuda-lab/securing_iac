@@ -52,4 +52,4 @@ This dataset is an expanded version developed for a journal paper (IPSJ COMPSAC 
 - `dataset_creation.py`: The script used to generate the dataset.
 
 # License
-MIT
+MIT License, see [LICENSE](LICENSE).
