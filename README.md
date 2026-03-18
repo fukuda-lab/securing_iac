@@ -25,6 +25,20 @@ This dataset was developed for paper [Harnessing the Power of LLMs for Code Smel
 - `unrestricted_ip_address`
 - `weak_crypto__algo_`
 
+**Publication & Citation**
+If you use this dataset or our methodology, please cite our IEEE COMPSAC 2025 paper:
+
+```bibtex
+@inproceedings{vo2025harnessing,
+  title={Harnessing the Power of LLMs for Code Smell Detection in Terraform Infrastructure as Code},
+  author={Vo, Quoc-Huy and Dao, Ha and Fukuda, Kensuke},
+  booktitle={2025 IEEE 49th Annual Computers, Software, and Applications Conference (COMPSAC)},
+  pages={533--542},
+  year={2025},
+  organization={IEEE}
+}
+```
+
 ## 2. COMPSAC Special Issue 2026 Dataset ([compsac_special_issue26/](compsac_special_issue26/))
 
 This dataset is an expanded version developed for a journal paper (IPSJ COMPSAC Special Issue 2026). It includes both raw Terraform files and a structured JSONL file for machine learning tasks.
