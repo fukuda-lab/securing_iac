@@ -1,6 +1,6 @@
 # Harnessing the Power of LLMs for Code Smell Detection in Terraform IaC
 
-This repository contains the synthetic dataset used in our study on detecting code smells in Terraform Infrastructure as Code (IaC) using Large Language Models. The synthetic dataset provides small, labeled Terraform examples for common code smell categories to support teaching, experimentation, and reproducible evaluation.
+This directory contains the synthetic dataset used in our study on detecting code smells in Terraform Infrastructure as Code (IaC) using Large Language Models. The synthetic dataset provides small, labeled Terraform examples for common code smell categories to support teaching, experimentation, and reproducible evaluation.
 
 **About the synthetic dataset**
 - Purpose: provide concise, human-readable Terraform snippets that illustrate individual IaC code smells across multiple categories.
