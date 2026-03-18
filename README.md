@@ -41,7 +41,7 @@ If you use this dataset or our methodology, please cite our IEEE COMPSAC 2025 pa
 
 ## 2. COMPSAC Special Issue 2026 Dataset ([compsac_special_issue26/](compsac_special_issue26/))
 
-This dataset is an expanded version developed for our journal paper (IPSJ COMPSAC Special Issue 2026). It includes both raw Terraform files and a structured JSONL file for machine learning tasks.
+This dataset is an expanded version developed for our journal paper (IPSJ COMPSAC Special Issue 2026). It includes both raw Terraform files and a structured JSONL file for fine-tuning LLMs tasks.
 
 Paper title: "Securing IaC: Detecting Terraform Security Smells with fine-tuned LLMs."
 
