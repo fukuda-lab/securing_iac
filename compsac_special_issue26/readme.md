@@ -11,7 +11,7 @@ Paper title: "Securing IaC: Detecting Terraform Security Smells with fine-tuned 
 
 ```bash
 cd dataset
-python3 dataset/dataset_creation.py
+python3 ./dataset_creation.py
 ```
 
 - **Output:** [dataset/dataset.jsonl](dataset/dataset.jsonl) — a newline-delimited JSON file where each line is an object with the keys `instruction`, `input` (the Terraform source), and `output` (a JSON string with the expected `issues.code_smell_type`).
