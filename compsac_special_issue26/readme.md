@@ -5,6 +5,7 @@ Paper title: "Securing IaC: Detecting Terraform Security Smells with fine-tuned 
 ## Dataset
 
 - **Folder:** [dataset](dataset) — contains Terraform sample folders and the dataset script.
+- **Folder:** [dataset/1.code_smell_tf_file/](dataset/1.code_smell_tf_file/): Raw `.tf` samples organized by type (`admin_by_default`, `empty_password`, `hard_coded_secret`, `insufficient_key_size`, `suspicious_comment`, `unrestricted_ip_address`, `weak_crypto__algo_`).
 - **Script:** [dataset/dataset_creation.py](dataset/dataset_creation.py) — scans Terraform files and generates a JSON Lines dataset for LLM training.
 - **What it does:** The script scans `dataset/1.code_smell_tf_file` for `.tf` files. Files prefixed with `f_` are treated as negative examples (no smell) and files prefixed with `t_` are treated as positive examples (smell present). The smell label is inferred from the parent subfolder name (for `t_` files).
 - **Run it:**
